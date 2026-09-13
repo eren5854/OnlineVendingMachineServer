@@ -10,5 +10,4 @@ public sealed class Vending : Entity
     public string? VendingImage { get; set; }
     public string VendingSerialNumber { get; set; } = string.Empty;
     public short VendingSlotCount { get; set; } = 0;
-    p
 }
