@@ -73,6 +73,20 @@ builder.Services.AddScoped<IJwtProvider, JwtProvider>();
 builder.Services.AddScoped<IAppUserRepository, AppUserRepository>();
 //builder.Services.AddScoped<IAppUserService, AppUserService>();
 
+builder.Services.AddScoped<IVendingRepository, VendingRepository>();
+builder.Services.AddScoped<IVendingService, VendingService>();
+
+builder.Services.AddScoped<IVendingSlotRepository, VendingSlotRepository>();
+//builder.Services.AddScoped<IVendingSlotService, VendingSlotService>();
+
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+//builder.Services.AddScoped<IProductService, ProductService>();
+
+builder.Services.AddScoped<IGeneralService, GeneralService>();
+builder.Services.AddScoped<IFileService, FileService>();
+
+
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(setup =>

@@ -1,7 +1,7 @@
 ﻿namespace OnlineVendingMachineServer.WebAPI.DTOs;
 
 public sealed record VendingGetDto(
-    Guid VendingId,
+    Guid Id,
     string VendingName,
     string? VendingLocation,
     string? VendingType,
